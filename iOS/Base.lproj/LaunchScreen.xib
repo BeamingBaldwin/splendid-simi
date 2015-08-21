@@ -10,8 +10,8 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LoadingPage" translatesAutoresizingMaskIntoConstraints="NO" id="eRV-DZ-sqR">
-                    <rect key="frame" x="-36" y="32" width="424" height="623"/>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SplashImage" translatesAutoresizingMaskIntoConstraints="NO" id="eRV-DZ-sqR">
+                    <rect key="frame" x="5" y="132" width="424" height="623"/>
                     <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                         <rect key="frame" x="-8" y="-8" width="488" height="716"/>
                     </variation>
@@ -24,6 +24,6 @@
         </view>
     </objects>
     <resources>
-        <image name="LoadingPage" width="640" height="960"/>
+        <image name="SplashImage" width="640" height="960"/>
     </resources>
 </document>
