@@ -23,7 +23,7 @@ var sortDistance = (objs) => {
 var getRecommendations = (user, callback) => {
   var userRef;
   if (!user.range) user.range = 0.2;
-  console.log('getRecommendations', user);
+  // console.log('getRecommendations', user);
   userRef = _ref.child('Users').push(user);
 
   userRef
@@ -35,10 +35,10 @@ var getRecommendations = (user, callback) => {
     .limitToFirst(5)
     .once('value', (snapshot) => {
       var recommendations = snapshot.val();
-      console.log(
-        'number of recommendations',
-        Object.keys(recommendations).length
-      );
+      // console.log(
+      //   'number of recommendations',
+      //   Object.keys(recommendations).length
+      // );
       userRef.remove();
       recommendations = sortDistance(recommendations);
       recommendations.forEach((meter) => {
